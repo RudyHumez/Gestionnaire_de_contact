@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>API-contacts - Admin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark d-flex justify-content-start p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html">AFPA Calais</a>
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h1 class="text-light h3 ml-5">Application de gestion des contacts</h1>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="tdb"
+                  ><i class="fas fa-chalkboard-teacher"></i> Tableau de bord <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="liste-contacts">
+                  <i class="fas fa-list-alt"></i>
+                  Liste des contacts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="nv-contact">
+                  <i class="fas fa-plus-circle"></i>
+                  Nouveau contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 p-md-5">
+          <section class="liste"></section>
+
+          <section class="tableaudb"></section>
+          <section class="liste2"></section>
+          <section class="liste3"></section>
+          <section class="liste4"></section>
+          <section class="liste5"></section>
+
+          <section class="col-md-6 ajout-contact">
+            <h2 class="mb-3">Ajout de contact</h2>
+            <form>
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" name="nom" id="nom" />
+              </div>
+              <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" name="prenom" id="prenom" />
+              </div>
+
+              <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" class="form-control" name="adresse" id="adresse" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" class="form-control" name="email" id="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel">Tél :</label>
+                <input type="tel" class="form-control" name="tel" id="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="categorie">Catégorie :</label>
+                <select id="categorie" name="categorie">
+                  <option value="#">Selectionner</option>
+                  <option value="Famille">Famille</option>
+                  <option value="Amis">Amis</option>
+                  <option value="Travail">Travail</option>
+                  <option value="Autres">Autres</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-success ajout-contact"><i class="fas fa-plus-circle"></i> Ajouter</button>
+              <button type="reset" class="btn btn-danger"><i class="fas fa-redo"></i> Réinitialiser</button>
+            </form>
+          </section>
+
+          <section class="col-md-6 modif-contact">
+            <h2 class="mb-3">Modification des contacts</h2>
+            <form>
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" name="nom" id="nom" />
+              </div>
+              <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" name="prenom" id="prenom" />
+              </div>
+
+              <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" class="form-control" name="adresse" id="adresse" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" class="form-control" name="email" id="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="tel">Tél :</label>
+                <input type="tel" class="form-control" name="tel" id="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="categorie">Catégorie :</label>
+                <select id="categorie" name="categorie">
+                  <option value="#">Selectionner</option>
+                  <option value="Famille">Famille</option>
+                  <option value="Amis">Amis</option>
+                  <option value="Travail">Travail</option>
+                  <option value="Autres">Autres</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-info maj-contact" id=""><i class="fas fa-edit mr-1"></i> Modifier</button>
+              <button type="reset" class="btn btn-danger"><i class="fas fa-redo"></i> Réinitialiser</button>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

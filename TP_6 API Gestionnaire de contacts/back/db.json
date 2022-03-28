@@ -1,0 +1,67 @@
+{
+  "contacts": [
+    {
+      "id": "1645140574309",
+      "nom": "DUCHEMIN",
+      "prenom": "Jean",
+      "adresse": "5 Rue du Chemin",
+      "email": "lechemin@hotmail.fr",
+      "tel": "0605060708",
+      "categorie": "Famille"
+    },
+    {
+      "id": "1645141867947",
+      "nom": "DUBOURG",
+      "prenom": "Louis",
+      "adresse": "9 Rue du Bourg",
+      "email": "lebourg@hotmail.fr",
+      "tel": "0609101112",
+      "categorie": "Travail"
+    },
+    {
+      "id": "1645143977964",
+      "nom": "DUFRESNES",
+      "prenom": "Roger",
+      "adresse": "18 Rue du Fresnes",
+      "email": "lefresnes@hotmail.fr",
+      "tel": "0613141516",
+      "categorie": "Amis"
+    },
+    {
+      "id": "1645612509797",
+      "nom": "DUGLAND",
+      "prenom": "Gérard",
+      "adresse": "1 Rue du Gland",
+      "email": "legland@hotmail.fr",
+      "tel": "0617181920",
+      "categorie": "Autres"
+    },
+    {
+      "nom": "DUJARDIN",
+      "prenom": "Pierre",
+      "adresse": "9 rue du Jardin",
+      "email": "dujardin@hotmail.fr",
+      "tel": "0656892345",
+      "categorie": "Autres",
+      "id": "1646908469597"
+    },
+    {
+      "id": "1646917921720",
+      "nom": "LAMENACE",
+      "prenom": "Jacques",
+      "adresse": "325 Rue Jambon",
+      "email": "lamenace.wanadoo.fr",
+      "tel": "0321998564",
+      "categorie": "Amis"
+    },
+    {
+      "id": "1646918062637",
+      "nom": "Lagrange",
+      "prenom": "Paul",
+      "adresse": "74 Chemin du trépas",
+      "email": "lagrange@laposte.net",
+      "tel": "0633446699",
+      "categorie": "Famille"
+    }
+  ]
+}
